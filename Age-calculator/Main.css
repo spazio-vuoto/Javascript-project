@@ -1,0 +1,56 @@
+body{
+    background-color: aliceblue;
+}
+
+/*id*/
+
+/*div*/
+#primoDiv{
+    margin-left: 420px;
+    margin-top: 80px;
+    margin-right: 470px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/*h1*/
+#primoH1{
+    text-align: center;
+    font-size: 33px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+}
+#secondoH1{
+    text-align: center;
+}
+
+/*p*/
+#primoP{
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+/*input*/
+#data{
+    margin: 0px 180px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: aquamarine;
+}
+
+/*button*/
+#button{
+    margin: 0px 250px;
+    height: 40px;
+    border-radius: 7px;
+    border-color: rgb(134, 134, 245);
+    background-color: rgb(134, 134, 245);
+    color: white;
+}

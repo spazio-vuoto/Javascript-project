@@ -1,0 +1,45 @@
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: beige;
+}
+
+/*id*/
+
+/*div*/
+#timer{
+    margin-top: 230px;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 600;
+    color: #f92672;
+}
+#buttonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*classi*/
+
+/*button*/
+.button{
+    background-color: #f92672;
+    color: white;
+    margin-top: 40px;
+    margin-right: 25px;
+    border-radius: 30px;
+    height: 80px;
+    width: 190px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.button:hover{
+    background-color: #f44583;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.button[disabled] {
+    opacity: 0.5;
+    cursor: default;
+}

@@ -1,0 +1,88 @@
+/*id*/
+
+/*h1*/
+#PrimoH1{
+    text-align: center;
+    margin-top: 130px;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+#SecondoH1{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/*sasso carta forbici*/
+#sasso{
+    border: none;
+    border-radius: 5px;
+    font-size: 50px;
+    margin: 0px 7px;
+    padding-bottom: 10px;
+    background-color: red;
+    cursor: pointer;
+}
+#carta{
+    border: none;
+    border-radius: 5px;
+    font-size: 50px;
+    margin: 0px 7x;
+    padding-bottom: 10px;
+    background-color: #2196f3;
+    cursor: pointer;
+}
+#forbici{
+    border: none;
+    border-radius: 5px;
+    font-size: 50px;
+    margin: 0px 7px;
+    padding-bottom: 10px;
+    background-color: rgb(11, 170, 11);
+    cursor: pointer;
+}
+
+#sasso:hover{
+    background-color: red;
+    opacity: 0.53;
+}
+#carta:hover{
+    background-color: #2196f3;
+    opacity: 0.53;
+}
+#forbici:hover{
+    background-color: rgb(11, 170, 11);
+    opacity: 0.53;
+}
+
+/*p*/
+#secondoP{
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+#vintoOPerso{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+/*span*/
+#userScore{
+    color: #2196f3;
+}
+#pcScore{
+    color: red;
+}
+
+/*class*/
+
+/*div*/
+.div-container{
+    display: flex;
+    justify-content: center;
+}

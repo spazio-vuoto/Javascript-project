@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Main.css">
+</head>
+<body>
+    <div class="divContainer">
+        <span class="span"><kbd>A</kbd></span>
+        <span class="span"><kbd>S</kbd></span>
+        <span class="span"><kbd>D</kbd></span>
+        <span class="span"><kbd>F</kbd></span>
+        <span class="span"><kbd>G</kbd></span>
+        <span class="span"><kbd>H</kbd></span>
+        <span class="span"><kbd>J</kbd></span>
+        <span class="span"><kbd>K</kbd></span>
+        <span class="span"><kbd>L</kbd></span>
+    </div>
+
+    <audio src="Audio/StockTune-Joyful Harpsichord Melody_1726396277.mp3" id="AudioA"></audio>
+    <audio src="Audio/StockTune-Digital Shadows Unveiled_1726397472.mp3" id="AudioS"></audio>
+    <audio src="Audio/StockTune-Drifting Through City Lights_1726397424.mp3" id="AudioD"></audio>
+    <audio src="Audio/StockTune-Whispers Of Ancient Hearts_1726397407.mp3" id="AudioF"></audio>
+    <audio src="Audio/StockTune-Mechanical Mouse Waltz_1726397447.mp3" id="AudioG"></audio>
+    <audio src="Audio/StockTune-Shadows Dance Under Lights_1726397458.mp3" id="AudioH"></audio>
+    <audio src="Audio/StockTune-Spurs Clink Spirits Soar_1726397415.mp3" id="AudioJ"></audio>
+    <audio src="Audio/StockTune-Whispers In Velvet Skies_1726397477.mp3" id="AudioK"></audio>
+    <audio src="Audio/StockTune-Whispers Of The Waves_1726397435.mp3" id="AudioL"></audio>
+
+    <script>
+
+        let audioPlay = null;
+
+        document.addEventListener('keydown', (e)=>{
+            console.log(`Hai premuto: ${e.key}`);   
+            switch(e.key.toLowerCase()){
+                case 'a':
+                    stopSuono();
+                    suona(document.getElementById("AudioA"));
+                    audioPlay = "AudioA";
+                    break;
+                case 's':
+                    stopSuono();
+                    suona(document.getElementById("AudioS"));
+                    audioPlay = "AudioS";
+                    break;
+                case 'd':
+                    stopSuono();
+                    suona(document.getElementById("AudioD"));
+                    audioPlay = "AudioD";
+                    break;
+                case 'f':
+                    stopSuono();
+                    suona(document.getElementById("AudioF"));
+                    audioPlay = "AudioF";
+                    break;
+                case 'g':
+                    stopSuono();
+                    suona(document.getElementById("AudioG"));
+                    audioPlay = "AudioG";
+                    break;
+                case 'h':
+                    stopSuono();
+                    suona(document.getElementById("AudioH"));
+                    audioPlay = "AudioH";
+                    break;
+                case 'j':
+                    stopSuono();
+                    suona(document.getElementById("AudioJ"));
+                    audioPlay = "AudioJ";
+                    break;
+                case 'k':
+                    stopSuono();
+                    suona(document.getElementById("AudioK"));
+                    audioPlay = "AudioK";
+                    break;
+                case 'l':
+                    stopSuono();
+                    suona(document.getElementById("AudioL"));
+                    audioPlay = "AudioL";
+                    break;
+                default:
+                    stopSuono();
+            }
+        });
+
+        function suona(letteraPremuta){
+            letteraPremuta.play();
+        }
+
+        function stopSuono(){
+            if(audioPlay != null){
+                document.getElementById(audioPlay).pause()
+                document.getElementById(audioPlay).currentTime = 0;
+            }
+        }
+    </script>
+</body>
+</html>
