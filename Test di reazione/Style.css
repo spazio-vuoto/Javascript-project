@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(201, 222, 241);
+}
+
+/*id*/
+
+/*h1*/
+#primoH1{
+    text-align: center;
+    margin-top: 150px;
+}
+
+/*p*/
+#primoP{
+    display: inline-block;
+    color: black;
+    font-size: 18px;
+    margin-top: 15  px;
+}
+#primoP:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+#secondoP{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/*a*/
+#primoA{
+    text-decoration: none;
+}

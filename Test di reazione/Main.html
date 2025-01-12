@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gioco di reazione</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <a href="Regole.html" id="primoA"><p id="primoP">come si gioca</p></a>
+    <h1 id="primoH1">Benvenuto al test per il tempo di reazione</h1>
+
+    <p id="secondoP">Schiaccia il tasto dello spazio per iniziare</p>
+
+    <script>
+        document.addEventListener('keydown', ()=>{
+            if(event.code == 'Space'){
+                window.location.href = 'TestReazione.html';
+            }
+        })
+    </script>
+</body>
+</html>
